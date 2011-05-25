@@ -1,0 +1,30 @@
+h1. A sample Ruby on Rails 2.3 application that uses AMQP gem with Unicorn
+
+h2. Getting Started
+
+    gem install bundler
+
+and then
+
+    bundle install
+
+finally,
+
+    unicorn_rails --port=3000 -c config/unicorn/development.rb
+
+
+h2. What does it do?
+
+On application boot, Unicorn forks 1 worker and that worker starts EventMachine event loop in a separate
+thread and then  establishes connection to AMQP broker. The key here is to not start EventMachine reactor
+before the fork: due to a known EventMachine issue, this will result in a reactor in limbo (because forking
+has side effects on open file descriptors). Restarting it is possible but not without hacks and requires
+some knowledge about EventMachine internals.
+
+
+
+h2. License
+
+Apache Public License 2.0.
+
+See LICESE file in the repository root.
