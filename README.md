@@ -21,6 +21,7 @@ before the fork: due to a known EventMachine issue, this will result in a reacto
 has side effects on open file descriptors). Restarting it is possible but not without hacks and requires
 some knowledge about EventMachine internals.
 
+Once connection is established, we publish a bunch of messages using default direct exchange.
 
 
 h2. License
