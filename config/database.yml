@@ -1,0 +1,6 @@
+development:
+  adapter: postgresql
+  database: test
+  timeout: 5000
+  encoding: utf8
+  username: postgres

@@ -1,0 +1,51 @@
+GIT
+  remote: git://github.com/ruby-amqp/amqp.git
+  revision: cf87d18484a41f9219a67a57c42b33f9820f4090
+  specs:
+    amqp (0.8.0.rc13.pre)
+      amq-client (>= 0.7.0.alpha27)
+      amq-protocol (>= 0.7.0.alpha4)
+      eventmachine
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    actionmailer (2.3.10)
+      actionpack (= 2.3.10)
+    actionpack (2.3.10)
+      activesupport (= 2.3.10)
+      rack (~> 1.1.0)
+    activerecord (2.3.10)
+      activesupport (= 2.3.10)
+    activeresource (2.3.10)
+      activesupport (= 2.3.10)
+    activesupport (2.3.10)
+    amq-client (0.7.0.alpha27)
+      amq-protocol (>= 0.7.0.alpha4)
+      eventmachine
+    amq-protocol (0.7.0.alpha4)
+    eventmachine (0.12.10)
+    kgio (2.4.1)
+    pg (0.11.0)
+    rack (1.1.2)
+    rails (2.3.10)
+      actionmailer (= 2.3.10)
+      actionpack (= 2.3.10)
+      activerecord (= 2.3.10)
+      activeresource (= 2.3.10)
+      activesupport (= 2.3.10)
+      rake (>= 0.8.3)
+    rake (0.9.0)
+    unicorn (3.6.2)
+      kgio (~> 2.3)
+      rack
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  amqp (~> 0.8.0.rc12)!
+  pg
+  rack (~> 1.1.0)
+  rails (= 2.3.10)
+  unicorn

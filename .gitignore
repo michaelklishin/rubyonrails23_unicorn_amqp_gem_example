@@ -1,0 +1,6 @@
+*~
+*.rbc
+*.class
+tmp/*
+log/*
+config/database.yml
